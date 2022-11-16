@@ -6,7 +6,17 @@ import (
 	"time"
 )
 
+const PI = 3.14
+
+const (
+	URL      = "https://google.com"
+	SiteName = "グーグル"
+)
+
 func main() {
+	fmt.Println(PI)
+	fmt.Println(URL)
+	fmt.Println(SiteName)
 	// fmtパッケージでConsoleに文字列を表示
 	fmt.Println("hello world", time.Now())
 
