@@ -45,4 +45,14 @@ func main() {
 		あいうえお`)
 
 	fmt.Println(string(byte(71)))
+
+	// 配列
+	var arr [4]int
+
+	fmt.Println(arr)
+
+	var arr2 [4]int = [4]int{1, 3, 4, 5}
+
+	fmt.Println(arr2)
+
 }
