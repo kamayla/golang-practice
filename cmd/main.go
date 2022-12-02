@@ -13,6 +13,14 @@ const (
 	SiteName = "グーグル"
 )
 
+func integers() func() int {
+	i := 0
+	return func() int {
+		i++
+		return i
+	}
+}
+
 func main() {
 	fmt.Println(PI)
 	fmt.Println(URL)
@@ -54,5 +62,19 @@ func main() {
 	var arr2 [4]int = [4]int{1, 3, 4, 5}
 
 	fmt.Println(arr2)
+
+	ints := integers()
+
+	fmt.Println(ints())
+	fmt.Println(ints())
+	fmt.Println(ints())
+	fmt.Println(ints())
+
+	intsTwo := integers()
+
+	fmt.Println(intsTwo())
+	fmt.Println(intsTwo())
+	fmt.Println(intsTwo())
+	fmt.Println(intsTwo())
 
 }
